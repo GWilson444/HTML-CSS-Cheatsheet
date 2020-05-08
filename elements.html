@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements and Structure</title>
+    <link href="./resources/index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <a href="./index.html">Home</a>
+    <h1>Elements and Structure</h1>
+
+    <!-- //** Introduction **// -->
+
+    <h2>HTML</h2>
+    
+        <p>HTML (HyperText Markup Language) is used to give content to a web page and 
+            instructs web browsers on how to structure that content.</p> 
+        <p>A markup language is a computer annotation system for defining the structure and presentation of text.</p>
+<hr>
+
+    <!-- //** Terms Reference Section **// -->
+    
+<h2>Terms</h2>
+
+    <h3 class="head_3">Document Type Declaration</h3>
+        <p>The document type declaration <span class="tag">&lt;!DOCTYPE html&gt;</span> is required as the first line of 
+            an HTML document. The doctype declaration is an instruction to the browser about what 
+            type of document to expect and which version of HTML is being used, in this case it’s 
+            HTML5.</p>
+    <h3 class="head_3">Indentation</h3>
+        <p>HTML code should be formatted such that the indentation level of text increases 
+            once for each level of nesting.</p>
+        <p>It is a common convention to use two or four space per level of nesting.</p>
+
+    <h3 class="head_3">Element Content</h3>
+        <p>The content of an HTML element is the information between the opening and closing tags 
+            of an element.</p>
+    
+    <h3 class="head_3">Whitespace</h3>
+        <p>Whitespace, such as line breaks, added to an HTML document between block-level 
+            elements will generally be ignored by the browser and are not added to increase 
+            spacing on the rendered HTML page. Rather, whitespace is added for organization and 
+            easier reading of the HTML document itself.</p>
+    
+    <h3 class="head_3">HTML Tag</h3>
+        <p>The syntax for a single HTML tag is an opening angle bracket <span class="tag">&lt;</span> followed by the 
+            element name and a closing angle bracket <span class="tag">&gt;</span>. Here is an example of an opening 
+            <span class="tag">&lt;div&gt;</span> tag.</p>
+    
+    <h3 class="head_3">Closing Tag</h3>
+        <p>An HTML closing tag is used to denote the end of an HTML element. The syntax for a 
+            closing tag is a left angle bracket <span class="tag">&lt;</span> followed by a forward slash / then the element 
+            name and a right angle bracket to close <span class="tag">&gt;</span>.</p>
+
+    <h3 class="head_3">HTML Attributes</h3>
+        <p>HTML attributes are values added to the opening tag of an element to configure the 
+            element or change the element’s default behavior. In the provided example, we are 
+            giving the <span class="tag">&lt;p&gt;</span> (paragraph) element a unique identifier using the <span class="tag">id</span> attribute 
+            and changing the color of the default text using the <span class="tag">style</span> attribute.</p>
+
+<hr>
+
+    <!-- //** Tag Reference Section **// -->
+
+<h2>HTML Tag Reference</h2>
+    <h3>HTML Tags</h3>
+    <table border="1.5">
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="tag">&lt;head&gt;</span></td>
+                <td>Head Element</td>
+                <td>The <span class="tag">&lt;head&gt;</span> element contains general information about an HTML page that isn’t 
+                    displayed on the page itself. This information is called metadata and includes things 
+                    like the title of the HTML document and links to stylesheets.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;title&gt;</span></td>
+                <td>Title Element</td>
+                <td>Contains text that defines the title of an HTML document.  Is displayed in the 
+                    browser’s title bar or tab in which the HTML page is displayed.  Can only be 
+                    contained inside a document’s <span class="tag">&lt;head&gt;</span> element.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;body&gt;</span></td>
+                <td>Body Element</td>
+                <td>Represents the content of an HTML document. Content inside <span class="tag">&lt;body&gt;</span> tags are rendered 
+                    on the web browsers. 
+                    <em>Note: There can be only one &lt;body&gt; element in a document.</em>
+                    </td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;div&gt;</span></td>
+                <td>Div Element</td>
+                <td>Used as a container that divides an HTML document into sections and is short for “division”. 
+                    Can contain flow content such as headings, paragraphs, links, images, etc.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;h1&gt;</span>-<span class="tag">&lt;h6&gt;</span></td>
+                <td>Heading Elements</td>
+                <td>HTML can use six different levels of heading elements. The heading elements are ordered from 
+                    the highest level <span class="tag">&lt;h1&gt;</span> to the lowest level <span class="tag">&lt;h6&gt;</span>.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;p&gt;</span></td>
+                <td>Paragraph Element</td>
+                <td>Contains and displays a block of text.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;strong&gt;</span></td>
+                <td>Strong Element</td>
+                <td>Highlights important, serious, or urgent text and browsers will normally render this highlighted 
+                    text in <strong>bold</strong> by default.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;em&gt;</span></td>
+                <td>Emphasis Element</td>
+                <td>Emphasizes text and browsers will usually <em>italicize</em> the emphasized text by default.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;span&gt;</span></td>
+                <td>Span Element</td>
+                <td>Is an inline container for text and can be used to group text for styling purposes. However, 
+                    this is a generic container its use should be avoided if a more semantic element is available.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;ul&gt;</span></td>
+                <td>Unordered List Element</td>
+                <td>Used to create a list of items in no particular order. Each individual list item will have a 
+                    bullet point by default.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;ol&gt;</span></td>
+                <td>Ordered List Element</td>
+                <td>Creates a list of items in sequential order. Each list item appears numbered by default.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;li&gt;</span></td>
+                <td>List Item Element</td>
+                <td>Creates list items inside:
+                    <ul>
+                        <li>Unordered lists <span class="tag">&lt;ul&gt;</span></li>
+                        <li>Ordered lists <span class="tag">&lt;ol&gt;</span></li>
+                    <ul>
+                    <em>(^^These are list items!)</em>
+                </td>
+            </tr>
+            <tr> 
+                <td><span class="tag">&lt;a&gt;</span></td>
+                <td>Anchor Element</td>
+                <td>Element is used to create hyperlinks in an HTML document. Hyperlinks can point to other webpages, 
+                    files on the same server, a location on the same page, or any other URLThe href attribute determines 
+                    the location the anchor element points to.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;img&gt;</span></td>
+                <td>Image Element</td>
+                <td>Embeds images in documents. The src attribute contains the image URL and is mandatory. &lt;img&gt; is an 
+                    empty element meaning it should not have a closing tag.</td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;video&gt;</span></td>
+                <td>Video Element</td>
+                <td>Embeds a media player for video playback. The src attribute will contain the URL to the video. 
+                    Adding the controls attribute will display video controls in the media player. <em>Note: The content 
+                    inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.</em></td>
+            </tr>
+            <tr>
+                <td><span class="tag">&lt;!--, --&gt;</span></td>
+                <td>Comments</td>
+                <td>In HTML, comments can be added between an opening <span class="tag">&lt;!--</span> and closing <span class="tag">--&gt;</span>. Content inside of comments will 
+                    not be rendered by browsers, and are usually used to describe a part of code or provide other details. <em> Note:  
+                    Comments can span single or multiple lines.</em></td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+
+    <!-- //** Attributes Reference Section **// -->
+    
+<h2>Attributes Reference</h2>
+    <table border="1.5">
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

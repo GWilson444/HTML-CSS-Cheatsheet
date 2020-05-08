@@ -1,0 +1,35 @@
+body {
+    background-color: darkseagreen;
+}
+
+.tag {
+    background-color: cornsilk;
+    font-family: Lucida Console, Courier, monospace;
+    font-size: small;
+}
+
+th {
+    color: blanchedalmond;
+    background-color: darkgreen;
+}
+
+table {
+    margin: 0 auto;
+    width: 750px;
+    border: darkkhaki;
+    border-style: solid;
+}
+
+h1 {
+    color: cornsilk;
+}
+
+h2, h3 {
+    text-align: center;
+    color: cornsilk
+}
+
+.head_3 {
+    text-align: left;
+    color: cornsilk;
+}
